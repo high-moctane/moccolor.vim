@@ -234,6 +234,26 @@ hi! link StatusLineTermNC StatusLineNC
 hi! link TabLineFill      TabLine
 hi! link VisualNOS        Visual
 
+let g:terminal_ansi_colors = [
+  \   '#000000',
+  \   '#ff8787',
+  \   '#87d787',
+  \   '#d7d787',
+  \   '#afafff',
+  \   '#d787ff',
+  \   '#87d7d7',
+  \   '#d0d0d0',
+  \   '#444444',
+  \   '#ff5f5f',
+  \   '#87d75f',
+  \   '#d7d75f',
+  \   '#8787ff',
+  \   '#d75fd7',
+  \   '#5fafff',
+  \   '#000000',
+  \ ]
+
+
 set background=dark
 call s:set_highlights()
 
