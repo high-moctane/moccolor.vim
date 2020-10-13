@@ -78,22 +78,22 @@ endfunction
 
 " Color Palette
 let s:black_gui       = '#000000'
-let s:gray1_gui       = '#212121'
-let s:gray2_gui       = '#404040'
+let s:gray1_gui       = '#262626'
+let s:gray2_gui       = '#444444'
 let s:gray4_gui       = '#808080'
-let s:gray5_gui       = '#a3a3a3'
-let s:gray6_gui       = '#cfcfcf'
+let s:gray5_gui       = '#a8a8a8'
+let s:gray6_gui       = '#d0d0d0'
 
-let s:dark_green_gui  = '#18381f'
-let s:green_gui       = '#9ac96d'
-let s:blue_gui        = '#b0bbf5'
-let s:light_blue_gui  = '#84dbd3'
-let s:purple_gui      = '#e090db'
-let s:dark_red_gui    = '#361521'
-let s:red_gui         = '#fa787c'
-let s:orange_gui      = '#dea462'
-let s:dark_yellow_gui = '#383816'
-let s:yellow_gui      = '#7f821f'
+let s:dark_green_gui  = '#005f00'
+let s:green_gui       = '#87d787'
+let s:blue_gui        = '#afafff'
+let s:light_blue_gui  = '#87d7d7'
+let s:purple_gui      = '#d787ff'
+let s:dark_red_gui    = '#5f0000'
+let s:red_gui         = '#ff8787'
+let s:orange_gui      = '#d7af5f'
+let s:dark_yellow_gui = '#5f5f00'
+let s:yellow_gui      = '#878700'
 
 let s:black_cterm       = '16'
 let s:gray1_cterm       = '235'
@@ -106,9 +106,9 @@ let s:dark_green_cterm  = '22'
 let s:green_cterm       = '114'
 let s:blue_cterm        = '147'
 let s:light_blue_cterm  = '116'
-let s:purple_cterm      = '176'
+let s:purple_cterm      = '177'
 let s:dark_red_cterm    = '52'
-let s:red_cterm         = '204'
+let s:red_cterm         = '210'
 let s:orange_cterm      = '179'
 let s:dark_yellow_cterm = '58'
 let s:yellow_cterm      = '100'
@@ -234,6 +234,8 @@ hi! link StatusLineTermNC StatusLineNC
 hi! link TabLineFill      TabLine
 hi! link VisualNOS        Visual
 
+set background=dark
 call s:set_highlights()
+
 
 " vim: set sw=2 ts=2 sts=2 et :
