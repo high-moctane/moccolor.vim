@@ -95,6 +95,24 @@ let s:orange_gui      = '#dea462'
 let s:dark_yellow_gui = '#383816'
 let s:yellow_gui      = '#7f821f'
 
+let s:black_cterm       = '16'
+let s:gray1_cterm       = '235'
+let s:gray2_cterm       = '238'
+let s:gray4_cterm       = '244'
+let s:gray5_cterm       = '248'
+let s:gray6_cterm       = '252'
+
+let s:dark_green_cterm  = '22'
+let s:green_cterm       = '114'
+let s:blue_cterm        = '147'
+let s:light_blue_cterm  = '116'
+let s:purple_cterm      = '176'
+let s:dark_red_cterm    = '52'
+let s:red_cterm         = '204'
+let s:orange_cterm      = '179'
+let s:dark_yellow_cterm = '58'
+let s:yellow_cterm      = '100'
+
 " Highlights
 call s:hi_gui('Comment',    '',          s:gray4_gui,      '',          '')
 call s:hi_gui('Constant',   '',          s:green_gui,      '',          '')
@@ -140,12 +158,64 @@ call s:hi_gui('SpellLocal',   'underline', '',             '',                s:
 call s:hi_gui('SpellRare',    'underline', '',             '',                s:blue_gui)
 call s:hi_gui('StatusLine',   'NONE',      s:black_gui,    s:gray5_gui,       '')
 call s:hi_gui('StatusLineNC', 'NONE',      s:black_gui,    s:gray4_gui,       '')
-call s:hi_gui('TabLine',      'underline', s:gray6_gui,    s:gray1_gui,       '')
-call s:hi_gui('TabLineSel',   'underline', s:black_gui,    s:gray4_gui,       '')
+call s:hi_gui('TabLine',      'NONE',      s:gray6_gui,    s:gray2_gui,       '')
+call s:hi_gui('TabLineSel',   'NONE',      s:black_gui,    s:gray5_gui,       '')
 call s:hi_gui('Title',        '',          s:blue_gui,     '',                '')
 call s:hi_gui('Visual',       'NONE',      '',             s:gray2_gui,       '')
 call s:hi_gui('WarningMsg',   '',          s:orange_gui,   '',                '')
 call s:hi_gui('WildMenu',     '',          s:gray6_gui,    s:black_gui,       '')
+
+" cterm
+call s:hi_cterm('Comment',    '',          s:gray4_cterm,      '',            '')
+call s:hi_cterm('Constant',   '',          s:green_cterm,      '',            '')
+call s:hi_cterm('Identifier', 'NONE',      s:light_blue_cterm, '',            '')
+call s:hi_cterm('Statement',  'NONE',      s:blue_cterm,       '',            '')
+call s:hi_cterm('Preproc',    '',          s:blue_cterm,       '',            '')
+call s:hi_cterm('Type',       'NONE',      s:blue_cterm,       '',            '')
+call s:hi_cterm('Special',    '',          s:purple_cterm,     '',            '')
+call s:hi_cterm('Underlined', 'underline', '',                 '',            '')
+call s:hi_cterm('Ignore',     '',          '',                 '',            '')
+call s:hi_cterm('Error',      'bold',      s:red_cterm,        s:gray1_cterm, '')
+call s:hi_cterm('Todo',       'bold',      s:orange_cterm,     s:gray1_cterm, '')
+
+call s:hi_cterm('ColorColumn',  '',          '',               s:black_cterm,       '')
+call s:hi_cterm('Cursor',       '',          s:black_cterm,    s:gray5_cterm,       '')
+call s:hi_cterm('CursorColumn', '',          '',               s:black_cterm,       '')
+call s:hi_cterm('CursorLine',   'NONE',      '',               s:black_cterm,       '')
+call s:hi_cterm('Directory',    '',          s:blue_cterm,     '',                  '')
+call s:hi_cterm('DiffAdd',      '',          '',               s:dark_green_cterm,  '')
+call s:hi_cterm('DiffChange',   'NONE',      '',               s:dark_yellow_cterm, '')
+call s:hi_cterm('DiffDelete',   '',          s:dark_red_cterm, s:dark_red_cterm,    '')
+call s:hi_cterm('DiffText',     'underline', '',               s:dark_yellow_cterm, s:gray6_cterm)
+call s:hi_cterm('EndOfBuffer',  '',          s:gray2_cterm,    '',                  '')
+call s:hi_cterm('VertSplit',    '',          s:black_cterm,    s:black_cterm,       '')
+call s:hi_cterm('Folded',       '',          s:gray5_cterm,    s:black_cterm,       '')
+call s:hi_cterm('FoldColumn',   '',          s:gray4_cterm,    s:black_cterm,       '')
+call s:hi_cterm('SignColumn',   '',          s:gray4_cterm,    s:black_cterm,       '')
+call s:hi_cterm('LineNr',       '',          s:gray4_cterm,    s:black_cterm,       '')
+call s:hi_cterm('CursorLineNr', 'NONE',      s:gray6_cterm,    s:gray2_cterm,       '')
+call s:hi_cterm('MatchParen',   '',          s:black_cterm,    s:gray5_cterm,       '')
+call s:hi_cterm('Normal',       '',          s:gray6_cterm,    s:gray1_cterm,       '')
+call s:hi_cterm('Pmenu',        '',          s:gray6_cterm,    s:gray2_cterm,       '')
+call s:hi_cterm('PmenuSel',     '',          s:gray6_cterm,    s:black_cterm,       '')
+call s:hi_cterm('PmenuSbar',    '',          '',               s:gray4_cterm,       '')
+call s:hi_cterm('PmenuThumb',   '',          '',               s:black_cterm,       '')
+call s:hi_cterm('Question',     '',          s:green_cterm,    '',                  '')
+call s:hi_cterm('QuickFixLine', 'underline', '',               '',                  s:gray6_cterm)
+call s:hi_cterm('Search',       'NONE',      s:black_cterm,    s:yellow_cterm,      '')
+call s:hi_cterm('SpecialKey',   '',          s:gray4_cterm,    '',                  '')
+call s:hi_cterm('SpellBad',     'underline', '',               s:gray1_cterm,       s:red_cterm)
+call s:hi_cterm('SpellCap',     'underline', '',               s:gray1_cterm,       s:yellow_cterm)
+call s:hi_cterm('SpellLocal',   'underline', '',               s:gray1_cterm,       s:green_cterm)
+call s:hi_cterm('SpellRare',    'underline', '',               s:gray1_cterm,       s:blue_cterm)
+call s:hi_cterm('StatusLine',   'NONE',      s:black_cterm,    s:gray5_cterm,       '')
+call s:hi_cterm('StatusLineNC', 'NONE',      s:black_cterm,    s:gray4_cterm,       '')
+call s:hi_cterm('TabLine',      'NONE',      s:gray6_cterm,    s:gray1_cterm,       '')
+call s:hi_cterm('TabLineSel',   'NONE',      s:gray1_cterm,    s:gray5_cterm,       '')
+call s:hi_cterm('Title',        '',          s:blue_cterm,     '',                  '')
+call s:hi_cterm('Visual',       'NONE',      '',               s:gray2_cterm,       '')
+call s:hi_cterm('WarningMsg',   '',          s:orange_cterm,   '',                  '')
+call s:hi_cterm('WildMenu',     '',          s:gray6_cterm,    s:black_cterm,       '')
 
 " link
 hi! link Conceal          Normal
