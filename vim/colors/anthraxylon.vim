@@ -142,7 +142,7 @@ call s:hi_gui('FoldColumn',   '',          s:gray4_gui,    s:black_gui,       ''
 call s:hi_gui('SignColumn',   '',          s:gray4_gui,    s:black_gui,       '')
 call s:hi_gui('LineNr',       '',          s:gray4_gui,    s:black_gui,       '')
 call s:hi_gui('CursorLineNr', '',          s:gray6_gui,    s:gray2_gui,       '')
-call s:hi_gui('MatchParen',   '',          s:black_gui,    s:gray5_gui,       '')
+call s:hi_gui('MatchParen',   '',          s:black_gui,    s:gray4_gui,       '')
 call s:hi_gui('Normal',       '',          s:gray6_gui,    s:gray1_gui,       '')
 call s:hi_gui('Pmenu',        '',          s:gray6_gui,    s:gray2_gui,       '')
 call s:hi_gui('PmenuSel',     '',          s:gray6_gui,    s:black_gui,       '')
@@ -194,7 +194,7 @@ call s:hi_cterm('FoldColumn',   '',          s:gray4_cterm,    s:black_cterm,   
 call s:hi_cterm('SignColumn',   '',          s:gray4_cterm,    s:black_cterm,       '')
 call s:hi_cterm('LineNr',       '',          s:gray4_cterm,    s:black_cterm,       '')
 call s:hi_cterm('CursorLineNr', 'NONE',      s:gray6_cterm,    s:gray2_cterm,       '')
-call s:hi_cterm('MatchParen',   '',          s:black_cterm,    s:gray5_cterm,       '')
+call s:hi_cterm('MatchParen',   '',          s:black_cterm,    s:gray4_cterm,       '')
 call s:hi_cterm('Normal',       '',          s:gray6_cterm,    s:gray1_cterm,       '')
 call s:hi_cterm('Pmenu',        '',          s:gray6_cterm,    s:gray2_cterm,       '')
 call s:hi_cterm('PmenuSel',     '',          s:gray6_cterm,    s:black_cterm,       '')
@@ -243,14 +243,14 @@ let g:terminal_ansi_colors = [
   \   '#d787ff',
   \   '#87d7d7',
   \   '#d0d0d0',
-  \   '#444444',
+  \   '#808080',
   \   '#ff5f5f',
   \   '#87d75f',
   \   '#d7d75f',
   \   '#8787ff',
   \   '#d75fd7',
   \   '#5fafff',
-  \   '#000000',
+  \   '#ffffff',
   \ ]
 
 
