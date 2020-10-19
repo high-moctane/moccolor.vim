@@ -235,7 +235,7 @@ hi! link TabLineFill      TabLine
 hi! link VisualNOS        Visual
 
 let g:terminal_ansi_colors = [
-  \   '#000000',
+  \   '#262626',
   \   '#ff8787',
   \   '#87d787',
   \   '#d7d787',
