@@ -173,7 +173,7 @@ call s:hi_cterm('Statement',  'NONE',      s:blue_cterm,       '',            ''
 call s:hi_cterm('Preproc',    '',          s:blue_cterm,       '',            '')
 call s:hi_cterm('Type',       'NONE',      s:blue_cterm,       '',            '')
 call s:hi_cterm('Special',    '',          s:purple_cterm,     '',            '')
-call s:hi_cterm('Underlined', 'underline', s:blue_cterm,       '',            '')
+call s:hi_cterm('Underlined', 'underline', '',       '',            s:blue_cterm)
 call s:hi_cterm('Ignore',     '',          '',                 '',            '')
 call s:hi_cterm('Error',      'bold',      s:red_cterm,        s:gray1_cterm, '')
 call s:hi_cterm('Todo',       'bold',      s:orange_cterm,     s:gray1_cterm, '')
