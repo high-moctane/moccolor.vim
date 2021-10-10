@@ -60,7 +60,7 @@ function! s:hi_cterm(group, cterm, ctermfg, ctermbg, ctermul)
     let l:attrs['ctermbg'] = a:ctermbg
   endif
 
-  if a:ctermul != ''
+  if !has('nvim') && a:ctermul != ''
     let l:attrs['ctermul'] = a:ctermul
   endif
 
