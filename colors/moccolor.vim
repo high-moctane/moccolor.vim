@@ -3,7 +3,7 @@ if exists('syntax_on')
     syntax reset
 endif
 
-let g:colors_name = 'anthraxylon'
+let g:colors_name = 'moccolor'
 
 let s:highlights = {}
 

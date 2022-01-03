@@ -1,2 +1,2 @@
-# anthraxylon
-Anthraxylon color scheme.
+# moccolor
+Moccolor Vim/Neovim color scheme.
