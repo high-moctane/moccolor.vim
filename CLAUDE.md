@@ -52,3 +52,28 @@ colors/moccolor.vim   <- 本体（カラースキーム定義）
 3. **ハイライト定義**（L116-218）：構文グループ → UI グループの順で GUI/cterm それぞれ定義
 4. **リンク**（L220-235）：`hi! link` で派生グループ
 5. **ターミナル色**（L237-254）：`g:terminal_ansi_colors` で ANSI 16色
+
+## 今後の構想
+
+### リポジトリ戦略
+
+リポジトリ名を `moccolor`（`.vim` を外す）にリネームして、vim 以外のカラースキームも同居させるモノレポ構成を検討中。vim はルートの `colors/` を探すので、リポジトリ名が `.vim` でなくても動く。
+
+```
+moccolor/
+├── colors/moccolor.vim       <- vim/neovim（現状のまま）
+├── fish/conf.d/moccolor.fish <- fish
+├── alacritty/moccolor.toml   <- Alacritty
+└── ...
+```
+
+### やりたいこと
+
+- **ライトテーマの作成**
+- **ハイライトグループの拡充** — 設定途中で力尽きた分がある
+- **tree-sitter キャプチャグループ対応** — Neovim の `@keyword`, `@function`, `@variable` などに色を設定して、より細かい色分けを実現
+- **vim script のレビュー** — ちゃんと書けているか確認
+- **vim / neovim 両対応の確認** — `has('nvim')` チェックが L63 に1箇所あるが十分か
+- **他の vim プラグインへの対応** — easymotion 以外にも moccolor パレットで統一したいプラグインがあるはず
+- **fish プラグインとして提供** — `set fish_color_*` 変数で moccolor パレットを適用
+- **公開を見据えたメンテ方法** — README の充実、スクリーンショットなど
